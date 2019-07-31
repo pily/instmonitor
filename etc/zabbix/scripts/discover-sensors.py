@@ -27,6 +27,7 @@ def add():
     if 'temp' in s['id']: t = 'TEMP'
     elif 'fan' in s['id']: t = 'FAN'
     elif 'power' in s['id']: t = 'POWER'
+    elif 'in' in s['id']: t = 'VOLTAGE'
     else: t = 'UNKNOWN'
 
     # Assume some defaults if not provided by sensor
